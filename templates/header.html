@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Restaurant Name</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <!-- plugin css -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animsition -->
+    <link href="../static/css/animsition.min.css" rel="stylesheet">
+    <!-- lightgallery -->
+    <link href="../static/css/css/lightgallery.css" rel="stylesheet">
+    <!-- font themify CSS -->
+    <link href="../static/css/themify-icons.css" rel="stylesheet" >
+    <!-- font awesome CSS -->
+    <link href="../static/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- revolution slider css -->
+    <link rel="stylesheet" type="text/css" href="../static/rs-plugin/css/fullscreen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../static/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="../static/css/rev-settings.css" type="text/css">
+    <!-- owl -->
+    <link href="../static/css/owl.carousel.css" rel="stylesheet">
+    <link href="../static/css/owl.theme.css" rel="stylesheet">
+    <!-- main css -->
+    <link href="../static/css/animated-on3step.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/queriesstyle.css" media="all" rel="stylesheet">
+    </head>
+
+    <body class="bg-init">
+
+    <!-- preloader -->
+    <div id="preloader">
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- container-wrapper -->
+    <div class="content-wrapper animsition-overlay">
+    <!-- bgblock -->
+    <div id="bgblock"></div>
+      
+    <header class="init"><!-- header -->
+      <!-- nav -->
+      <div class="navbar-default-white navbar-fixed-top">
+        <div class="container-fluid"><!-- container -->
+            <!-- row -->  
+            <div class="row p-3-vh">
+                <!-- logo --> 
+                <a class="logo centered"  href="{{url_for('main_page')}}">
+                <img class="h-100 init" alt="logo" src="../static/img/Logo-here.png">
+                <img class="h-100 show" alt="logo" src="../static/img/Logo-here.png">
+
+                </a> 
+                <!-- logo end -->
+
+                <!-- mainmenu start -->
+                <div class="white menu-init" id="main-menu">
+                <nav id="menu-center">
+                  <ul>
+                    <li> 
+                     <a class="actived" href="{{url_for('main_page')}}">Home</a>
+                    </li>
+                    <li>
+                     <a href="{{url_for('about')}}">About</a>
+                    </li>
+                    <li>
+                     <a href="{{url_for('menu')}}">Menu</a>
+                    </li>
+                    <li>
+                     <a href="{{url_for('gallery')}}">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="{{url_for('blog')}}">Blog</a>
+                    </li>
+                    <li>
+                      <a href="{{url_for('contact')}}">Contact</a>
+                    </li>
+                    <li>
+                      <a class="last" data-toggle="modal" data-target="#resevmodal" href="#">Reservation</a>
+                    </li>
+                  </ul>
+                </nav>
+                </div><!-- mainmenu end -->
+
+                <div class="menu-right centered">
+                  <ul class="iconright">
+                    <li>
+                      <div id="showside" class="d-none-mobile"><span class="ti-menu"></span></div>
+                      <div id="showmobile"><span class="ti-menu"></span></div>
+                    </li>
+                  </ul>
+                </div>
+
+            </div>
+            <!-- row end-->
+        </div><!-- container end -->
+      </div>
+      <!-- nav -->
+    </header><!-- header end -->

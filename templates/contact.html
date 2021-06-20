@@ -1,0 +1,84 @@
+{% include "header.html" %}
+
+<!-- breadcumb -->
+<section class="breadcumb" aria-label="breadcumb" style="background-image: url('../static/img/breadcumb.jpg');">
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-12">
+      <div class="main">
+        <div class="bread">
+          <div class="img-icon">
+             <img src="../static/img/breadcumb-icon.png" alt="#">
+          </div>
+          <div class="bread-title">CONTACT</div>
+          <div class="bread-subtitle">
+            <a href="{{url_for('main_page')}}">Home</a> 
+              <span class="spacebread"></span> 
+            <span>Contact</span>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+</section>
+<!-- breadcumb end -->
+
+<!-- map -->
+<section aria-label="map" class="no-bottom">
+  <div class="mapClass" data-aos="fade-up">
+    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2996.393619637736!2d19.819385482644076!3d41.32205335340273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1624218341135!5m2!1sen!2s" " frameborder="0" allowfullscreen></iframe>
+  </div>
+</section> 
+<!-- map end -->
+
+<!-- section contact -->
+      <section aria-label="contact">
+        <div class="container-fluid">
+        <div class="row p-3-vh">
+
+         <div class="col-md-6">
+            <div class="text-side">
+              <h3 class="heading">Talk with us </h3>
+              <p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. <br>Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+              <div class="address">
+                  <div class="heading">Our Office</div>
+                  <div class="list">
+                    <i class="fa fa-map-marker"></i>
+                    Tirane, Albania
+                  </div>
+                  <div class="list">
+                    <i class="fa fa-envelope-o"></i>
+                    <a href="mailto:contact_info@homekins.com" target="_blank" rel="noopener noreferrer">xxxxxxxxxx</a>
+                  </div>
+                  <div class="list">
+                    <i class="fa fa-phone"></i>xxxxxxx
+                  </div>
+              </div>
+            </div>
+         </div>
+          
+            <div class="col-md-6">
+                  <form id="form-contact1" class="autoheight">
+                              <div class="form-group user-name">
+                                  <input type="text" class="form-control" required id="name-contact-1" placeholder="Your Name">
+                              </div>
+
+                              <div class="form-group user-email">
+                                  <input type="email" class="form-control" required id="email-contact" placeholder="Your Email">
+                              </div>
+                          
+                              <div class="form-group user-message">
+                                  <textarea class="form-control" required id="message-contact" placeholder="Your Message"></textarea>
+                                  <div class="success" id="mail_success">Thank you. Your message has been sent</div>
+                                  <div class="error" id="mail_failed">Error, email not sent</div>
+                              </div>
+                      <button type="submit" id="send-contact-1" class="btn-contact">Send Now</button>
+                  </form>
+            </div>
+        </div>
+        </div>
+      </section>
+      <!-- section end -->
+
+{% include "footer.html" %}
