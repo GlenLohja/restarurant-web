@@ -554,6 +554,10 @@ padding: 36px 0;
     background: rgba(0,0,0,.3);
     z-index: 21;
 }
+
+/* .fullwidthbanner-container {
+  background-image: url('/static/img/777.jpg');
+} */
 #sidegalery{
     position: fixed;
     top: 0px;
@@ -939,6 +943,11 @@ transition: opacity .1s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.contact-f .main {
+
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .main .bread{
   color: #fff;
@@ -1468,9 +1477,55 @@ background: #fdfdfd;
 }
 
 /* contact */
+
+#contact-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-top: 50px;
+}
+#contact-info div {
+
+  padding-top: 10px;
+  width: 500px;
+  font-size: 2em;
+  padding-right: 30px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #C6830C;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+  padding-bottom: 20px;
+}
+
+.contact-a {
+  font-family: Roboto;
+  padding: 5px 8px;
+  font-size: 15px;
+  background-color: #000;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  #contact-info { 
+    display: block;
+    padding: auto;
+  }
+  #contact-info div {
+    margin-left: auto;
+    margin-right: auto;
+    width:  250px;
+    padding: 20px 0;
+  }
+  .contact-above {
+    margin-bottom: 10px;
+  }
+}
 .text-side{
-padding:  0;
-margin-top: 0;
+  padding:  0;
+  margin-top: 0;
 }
 .text-side .heading{
 font-size: 1.6rem !important;
@@ -1555,6 +1610,11 @@ padding-top: 12px;
 }
 .contact-form form button {
 margin-top: 10px;
+}
+
+.formContact {
+
+  padding-top: 50px;
 }
 .user-name,
 .user-email,
@@ -2534,3 +2594,59 @@ opacity: 0;
     padding: 0 10px 0 10px;
   }
 }
+
+/* job section */
+
+#jobs {
+  padding: 50px 0;
+  text-align: center;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+}
+#jobs div {
+  padding: 40px 0;
+}
+
+#jobs div h2 {
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+#jobs img {
+  width: 30%;
+  height: auto;
+}
+
+#jobs div a {
+  margin-top: 500px;
+  padding: 10px;
+  background-color: #af872f;
+  color: white;
+  text-decoration: none;
+}
+#jobs .job-location {
+  color: #af872f;
+  text-decoration: underline;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 768px) {
+  #jobs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mapClass iframe {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+

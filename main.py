@@ -17,6 +17,11 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@app.route('/contact-form')
+def contactForm():
+    return render_template("contact2.html")
+
+
 @app.route('/menu')
 def menu():
     return render_template("menu.html")
